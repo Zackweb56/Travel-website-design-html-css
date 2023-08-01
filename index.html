@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- aos link cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- css file link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- swiper cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- link font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i class="fa-solid fa-paper-plane"></i> travel</a>
+        <form action="" class="form-1">
+            <input type="text" name="search" id="search" placeholder="search here...">
+            <label for="search" class="fa-solid fa-magnifying-glass"></label>
+        </form>
+
+        <div class="icons">
+            <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+            <i class="fa-solid fa-moon" id="theme-btn"></i>
+            <i class="fa-solid fa-user" id="login-btn"></i>
+            <i class="fa-solid fa-bars" id="menu-btn"></i>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><i class="fa-solid fa-house"></i><a href="#home">home</a></li>
+                <li><i class="fa-solid fa-box-archive"></i><a href="#package">package</a></li>
+                <li><i class="fa-solid fa-chart-bar"></i><a href="#services">services</a></li>
+                <li><i class="fa-solid fa-dollar"></i></i><a href="#pricing">pricing</a></li>
+                <li><i class="fa-solid fa-users-viewfinder"></i><a href="#review">review</a></li>
+                <li><i class="fa-brands fa-blogger"></i><a href="#blogs">blogs</a></li>
+                <li><i class="fa-solid fa-address-card"></i><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="login">
+            <form action="" class="form-2">
+                <label for="username">username</label><br>
+                <input type="text" name="username" id="user" placeholder="enter your full name"><br>
+                <label for="password">password</label><br>
+                <input type="password" name="password" id="pass" placeholder="enter your password">
+                <span id="eye">show</span><br>
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">remember me</label>
+                <input type="submit" value="login" id="submit">
+            </form>
+        </div>
+    </header>
+    <!-- home section -->
+    <section id="home">
+        <div class="container">
+            <div class="content">
+                <div class="img">
+                    <img src="imgs/Trip-amico.svg" alt="">
+                </div>
+                <div class="text">
+                    <h2>adventure is worthwhile</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Veritatis explicabo eius inventore reprehenderit alias 
+                        eos facilis, ipsa est asperiores repellendus!
+                    </p>
+                    <button type="button" class="main-btn">explore now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- filter form  -->
+    <section>
+        <div class="form-3">
+            <h1 class="heading"> <span>travel</span>  now</h1>
+            <div class="book-now">
+                <div class="inputBox">
+                    <span>where to</span>
+                    <input type="text" placeholder="search places">
+                </div>
+        
+                <div class="inputBox">
+                    <span>arrivals</span>
+                    <input type="date">
+                </div>
+        
+                <div class="inputBox">
+                    <span>leaving</span>
+                    <input type="date">
+                </div>
+                <button type="button" class="main-btn">book now</button>   
+            </div>
+        </div>
+    </section>
+    <!-- packages -->
+    <section id="package">
+        <h1 class="heading">our <span>packages</span></h1>
+        <div class="all">
+            <div class="box">
+                <div class="img">
+                    <img src="imgs/p-2.jpg" alt="">
+                    <div class="city-name"><i class="fa-solid fa-location-dot"></i> hawaii</div>
+                </div>
+                <h2>$289.99 <span>$359.99</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing</p>
+                <button type="button" class="main-btn">book now</button>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <img src="imgs/p-4.jpg" alt="">
+                    <div class="city-name"><i class="fa-solid fa-location-dot"></i> paris</div>
+                </div>
+                <h2>$289.99 <span>$359.99</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing</p>
+                <button type="button" class="main-btn">book now</button>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <img src="imgs/p-5.jpg" alt="">
+                    <div class="city-name"><i class="fa-solid fa-location-dot"></i> tokyo</div>
+                </div>
+                <h2>$289.99 <span>$359.99</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing</p>
+                <button type="button" class="main-btn">book now</button>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <img src="imgs/p-1.jpg" alt="">
+                    <div class="city-name"><i class="fa-solid fa-location-dot"></i> london</div>
+                </div>
+                <h2>$289.99 <span>$359.99</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing</p>
+                <button type="button" class="main-btn">book now</button>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <img src="imgs/p-3.jpg" alt="">
+                    <div class="city-name"><i class="fa-solid fa-location-dot"></i> roma</div>
+                </div>
+                <h2>$289.99 <span>$359.99</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing</p>
+                <button type="button" class="main-btn">book now</button>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <img src="imgs/p-6.jpg" alt="">
+                    <div class="city-name"><i class="fa-solid fa-location-dot"></i> marrakech</div>
+                </div>
+                <h2>$289.99 <span>$359.99</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing</p>
+                <button type="button" class="main-btn">book now</button>
+            </div>
+        </div>
+    </section>
+    <!-- services -->
+    <section id="services">
+        <h1 class="heading">our <span>services</span></h1>
+        <div class="all">
+            <div class="box">
+                <div class="number">01</div>
+                <div class="icon"><i class="fa-solid fa-hotel"></i></div>
+                <h2>affordable hotels</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, rem.</p>
+            </div>
+
+            <div class="box">
+                <div class="number">02</div>
+                <div class="icon"><i class="fa-solid fa-plane"></i></div>
+                <h2>fastest travel</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, rem.</p>
+            </div>
+
+            <div class="box">
+                <div class="number">03</div>
+                <div class="icon"><i class="fa-solid fa-utensils"></i></div>
+                <h2>food and drinks</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, rem.</p>
+            </div>
+
+            <div class="box">
+                <div class="number">04</div>
+                <div class="icon"><i class="fa-solid fa-globe"></i></div>
+                <h2>around the world</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, rem.</p>
+            </div>
+
+            <div class="box">
+                <div class="number">05</div>
+                <div class="icon"><i class="fa-solid fa-person-walking-luggage"></i></div>
+                <h2>new adventures</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, rem.</p>
+            </div>
+
+            <div class="box">
+                <div class="number">06</div>
+                <div class="icon"><i class="fa-solid fa-bullhorn"></i></div>
+                <h2>safety guide</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, rem.</p>
+            </div>
+        </div>
+    </section>
+    <!-- pricing -->
+    <section id="pricing">
+        <h1 class="heading">our <span>pricing</span></h1>
+        <div class="all">
+            <div class="box">
+                <div class="center-content">
+                    <h2 class="title">basic plan</h2>
+                    <div class="price">
+                        $ <span>30.99</span> /mo
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-check"></i><p>10 days</p>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-check"></i><p>food and drinks</p>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-xmark" id="xmark"></i><p>safty guide</p>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-xmark" id="xmark"></i><p>insurance</p>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-xmark" id="xmark"></i><p>luxury hotel</p>
+                    </div>
+                    <button type="button" class="main-btn">choose plan</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="center-content">
+                    <h2 class="title">standar plan</h2>
+                    <div class="price">
+                        $ <span>59.99</span> /mo
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-check"></i><p>20 days</p>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-check"></i><p>food and drinks</p>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-check"></i><p>safty guide</p>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-xmark" id="xmark"></i><p>insurance</p>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-xmark" id="xmark"></i><p>luxury hotel</p>
+                    </div>
+                    <button type="button" class="main-btn">choose plan</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="center-content">
+                    <h2 class="title">premium plan</h2>
+                    <div class="price">
+                        $ <span>99.99</span> /mo
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-check"></i><p>30 days</p>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-check"></i><p>food and drinks</p>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-check"></i><p>safty guide</p>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-check"></i><p>insurance</p>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-check"></i><p>luxury hotel</p>
+                    </div>
+                    <button type="button" class="main-btn">choose plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our blogs -->
+    <section id="blogs">
+        <h1 class="heading">our <span>blogs</span></h1>
+        <div class="all">
+            <div class="box">
+                <div class="bgc img">
+                    <img src="imgs/Beach volleyball-pana.svg" alt="">
+                </div>
+                <h2 class="title-blog">explore the world now, adventure awaits</h2>
+                <button type="button" class="main-btn">read more</button>
+                <div class="border"></div>
+                <div class="informations">
+                    <div class="date"><i class="fa-solid fa-calendar"></i> 1st may, 2022 </div>
+                    <div class="admin"><i class="fa-solid fa-user"></i> by admin</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="bgc img">
+                    <img src="imgs/Camping-cuate.svg" alt="">
+                </div>
+                <h2 class="title-blog">explore the world now, adventure awaits</h2>
+                <button type="button" class="main-btn">read more</button>
+                <div class="border"></div>
+                <div class="informations">
+                    <div class="date"><i class="fa-solid fa-calendar"></i> 1st may, 2022 </div>
+                    <div class="admin"><i class="fa-solid fa-user"></i> by admin</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="bgc img">
+                    <img src="imgs/Wilderness-pana.svg" alt="">
+                </div>
+                <h2 class="title-blog">explore the world now, adventure awaits</h2>
+                <button type="button" class="main-btn">read more</button>
+                <div class="border"></div>
+                <div class="informations">
+                    <div class="date"><i class="fa-solid fa-calendar"></i> 1st may, 2022 </div>
+                    <div class="admin"><i class="fa-solid fa-user"></i> by admin</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact -->
+    <section id="contact">
+        <h2 class="heading"><span>contact</span> us</h2>
+        <form action="" class="form-4">
+            <div class="box">
+                <div class="inputs">
+                    <input type="text" placeholder="name" required>
+                    <input type="email" placeholder="e-mail" required>
+                    <input type="number" placeholder="number" required>
+                    <input type="text" placeholder="subject" required>
+                    <textarea name="message" cols="45" rows="5" placeholder="your message"></textarea>
+                </div>
+            </div>
+        </form>
+    </section>
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-side">
+                <h2>our branches</h2>
+                <div class="spans">
+                    <div class="content-icon">
+                        <i class="fa-solid fa-location-dot"></i><span>  morocco</span>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-location-dot"></i><span>  unated kingdom</span>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-location-dot"></i><span>  italy</span>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-location-dot"></i><span>  japan</span>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-location-dot"></i><span>  canada</span>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-location-dot"></i><span>  france</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-side">
+                <h2>quick links</h2>
+                <div class="spans">
+                    <div class="content-icon">
+                        <i class="fa-solid fa-angle-right"></i><span>  home</span>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-angle-right"></i><span>  packages</span>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-angle-right"></i><span>  services</span>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-angle-right"></i><span>  pricing</span>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-angle-right"></i><span>  blogs</span>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-angle-right"></i><span>  contact</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-side">
+                <h2>contact informations</h2>
+                <div class="spans">
+                    <div class="content-icon">
+                        <i class="fa-solid fa-phone"></i><span>  +2126123456</span>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-phone"></i><span>  +2125123456</span>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-envelope"></i><span>  livezakaria@gmail.com</span>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-envelope"></i><span>  example123@gmail.com</span>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-location-dot"></i><span>  morocco,benimellal-45128</span>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-solid fa-angle-right"></i><span>  456535781</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-side">
+                <h2>follow us</h2>
+                <div class="spans">
+                    <div class="content-icon">
+                        <i class="fa-brands fa-facebook"></i><span>  facebook</span>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-brands fa-instagram"></i><span>  instagram</span>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-brands fa-whatsapp"></i><span> whatsapp</span>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-brands fa-twitter"></i><span>  twitter</span>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-brands fa-linkedin-in"></i><span>  linkedin</span>
+                    </div>
+                    <div class="content-icon">
+                        <i class="fa-brands fa-pinterest"></i><span>  pintset</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border"></div>
+        <div class="copyright">creadet by <span>zakaria</span> | all rights reserved </div>
+    </footer>
+    <!-- js file link -->
+    <script src="js/script.js"></script>
+    <!-- swiper cdn link -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+</html>
